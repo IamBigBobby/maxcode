@@ -17,7 +17,6 @@ function encodeRLE(str) {
         resultStr += `${key}${strObj[key] === 1 ? '' : strObj[key]}`;
     }
 
-    console.log(resultStr);
     return resultStr;
 }
 
