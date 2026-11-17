@@ -14,4 +14,17 @@ function shortestWord(str) {
     }, accStr).length;
 }
 
-console.log(shortestWord("lorem ipsum dolor sit amet"))
+function shortestWord2(str) {
+    const arr = str.split(' ');
+    const firstWord = arr[0];
+
+    return arr.reduce((acc, value) => {
+        if (value.length < acc) {
+            return value.length;
+        }
+        return acc;
+    }, firstWord.length);
+}
+
+console.log(shortestWord("lorem ipsum dolor sit amet"));
+console.log(shortestWord2('lorem ipsum dolor sit amet hi'));
