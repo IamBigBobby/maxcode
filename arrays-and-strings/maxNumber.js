@@ -10,4 +10,10 @@ function max(numbers) {
     return max;
 }
 
+function max2(numbers) {
+    return numbers.reduce((acc, el) => el > acc ? el : acc)
+}
+
 console.log(max([-1, -2, -32, -13])); 
+
+console.log(max2([1, 2, 3, 4 ,5]));
